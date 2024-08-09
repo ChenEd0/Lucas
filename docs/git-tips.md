@@ -62,4 +62,4 @@ IDEA中可以安装插件 `Git Commit Template` `File->Setting->Plugs` 搜索插
 
 ![](images/2022-08-11-19-53-36.png)
 
-### ? 对遗留不规范提交的处理
+### 对遗留不规范提交的处理

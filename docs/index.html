@@ -31,6 +31,10 @@
     window.$docsify = {
       name: "Lucas's Blog",
       repo: '',
+      // logo: 'images/favicon.ico',
+      // 点击页面改变标签标题
+      autoHeader: true,
+
       loadSidebar: true,
       loadNavbar: true,
       // 切换页面后是否自动跳转到页面顶部
@@ -38,6 +42,10 @@
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
+      subMaxLevel:2 ,
+      nativeEmoji: true,
+
+
 <!--      复制按钮-->
       copyCode: {
         buttonText: '复制',
@@ -76,7 +84,7 @@
 </html>
 
 <!--  表情插件-->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+<!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>-->
 <!--  图片插件-->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 <!--代码块复制插件-->
