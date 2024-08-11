@@ -1,5 +1,5 @@
-# jmeter数据可视化展示
-
+# Jmeter数据可视化展示
+docker容器化部署jmeter+grafana+influxdb
 https://hub.docker.com/ 可以从官网查询需要下载的镜像
 
 ## 1、influxdb镜像启动
