@@ -1,5 +1,3 @@
-<!-- Logo -->
-[![favicon.ico](images%2Ffavicon.ico)](/)
+![logo](../images/favicon.ico)
 
-<!-- Title -->
 Lucas's Blog

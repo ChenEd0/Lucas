@@ -1,6 +1,10 @@
 # Lucas
 Lucas's Blog
 
+npm换源
+npm config set registry https://registry.npmmirror.com
+
+
 Quick start
 It is recommended to install docsify-cli globally, which helps initializing and previewing the website locally.
 

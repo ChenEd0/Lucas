@@ -1,0 +1,87 @@
+# docker安装
+
+## 配置宿主机网卡
+
+### 查询配置
+
+配置网卡转发，查看值是否为1
+
+```
+sysctl -a | grep -w net.ipv4.ip_forward
+```
+
+![](../images/2022-08-08-15-49-43.png)
+
+### 配置网卡
+
+若未配置，需执行如下命令：
+
+```
+cat  <<EOF > /etc/sysctl.d/docker.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+net.ipv4.ip_forward = 1
+EOF
+```
+
+查看网卡转发的值是否为1（两条命令都可以检查）
+
+```
+sysctl -p /etc/sysctl.d/docker.conf
+sysctl -a | grep -w net.ipv4.ip_forward
+```
+
+## 镜像下载源
+
+http://mirrors.aliyun.com/pypi/simple/ //阿里（迁移后很多镜像源都没有，差评）  
+https://pypi.tuna.tsinghua.edu.cn/simple/ //清华（比较齐全，推荐）  
+http://pypi.douban.com/ //豆瓣  
+http://pypi.hustunique.com/ //华中理工大学  
+http://pypi.sdutlinux.org/ //山东理工大学  
+http://pypi.mirrors.ustc.edu.cn/ //中国科学技术大学  
+http://mirrors.163.com //网易（蜗牛慢）
+
+## 配置镜像下载源
+
+curl -o /etc/yum.repos.d/docker-ce.repo http://mirrors.163.com/docker-ce/linux/centos/docker-ce.repo
+
+让repo源生效 yum clean all && yum makecache 看到下图，即配置成功
+
+![](../images/2022-08-08-15-53-48.png)
+
+## docker 安装
+
+办法1：直接安装最新版docker（推荐）
+
+```
+yum  install -y  docker-ce
+```
+
+办法2：安装指定版本
+
+```
+yum list docker-ce --showduplicates  | sort -r   //查看源中的可用版本
+yum  install -y docker-ce-18.09.9
+```
+
+## 配置镜像加速
+
+```
+sudo mkdir -p /etc/docker   
+sudo   cat <<'EOF' >  /etc/docker/daemon.json    
+{ "registry-mirrors": ["https://e4gu4sg3.mirror.aliyuncs.com","http://hub-mirror.c.163.com","https://docker.mirrors.ustc.edu.cn"] }   
+EOF
+```
+
+### 重新加载生效
+
+```
+sudo systemctl daemon-reload    
+sudo systemctl restart docker  
+```
+
+## 设置docker开机重启
+
+```
+sudo  systemctl  enable  docker
+```
