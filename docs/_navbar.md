@@ -1,3 +1,3 @@
-![logo](images/favicon.ico)
+![logo](./images/favicon.ico)
 
 Lucas's Blog
