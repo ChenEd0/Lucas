@@ -1,13 +1,11 @@
-[//]: # (引用的图片本地化)
-
 <!-- https://github.com/kyechan99/capsule-render -->
 <p>
-    <img src="./images/首页1.svg" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&&section=header&text=HI%20THERE&fontSize=90&fontAlign=50&fontAlignY=30&desc=I%20am%20Lucas!&descAlign=50&descSize=30&descAlignY=60&animation=twinkling" />
 </p>
 
 <!-- https://github.com/DenverCoder1/readme-typing-svg -->
 <p>
-    <img src="./images/首页2.svg" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Welcome+to+my+Blog+!;Have+Fun+!+!+!" />
 </p>
 
 <p>
@@ -22,12 +20,12 @@
 [//]: # (<br/>)
 
 <!-- https://github.com/anuraghazra/github-readme-stats -->
-<img src="./images/首页3-1.svg" />
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=Xiaokang2022&theme=transparent&hide_border=true&layout=compact&langs_count=22" />
 <!-- https://github.com/anuraghazra/github-readme-stats -->
-<img src="./images/首页3-2.svg" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Xiaokang2022&theme=transparent&hide_border=true&layout=donut-vertical&langs_count=6" />
 <br/>
 <!-- https://github.com/tandpfun/skill-icons -->
-<img src="./images/首页4.svg" />
+<img src="https://skillicons.dev/icons?i=postman,py,php,java,html,css,js,md,mysql,linux,git,github,gitlab,pycharm,vscode&theme=light" />
 </p>
 
 [//]: # (<!-- https://github.com/badges/shields -->)
@@ -42,5 +40,5 @@
 
 <!-- https://github.com/kyechan99/capsule-render -->
 <p>
-    <img src="./images/首页5.svg" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&&section=footer&text=THE%20END&fontSize=90&fontAlign=50&fontAlignY=70&desc=Hope%20your%20program%20is%20bug-free!&descAlign=50&descSize=30&descAlignY=40&animation=twinkling" />
 </p>
