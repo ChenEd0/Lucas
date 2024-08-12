@@ -10,7 +10,7 @@
 sysctl -a | grep -w net.ipv4.ip_forward
 ```
 
-![](images/2022-08-08-15-49-43.png)
+![](../images/2022-08-08-15-49-43.png)
 
 ### 配置网卡
 
@@ -47,7 +47,7 @@ curl -o /etc/yum.repos.d/docker-ce.repo http://mirrors.163.com/docker-ce/linux/c
 
 让repo源生效 yum clean all && yum makecache 看到下图，即配置成功
 
-![](images/2022-08-08-15-53-48.png)
+![](../images/2022-08-08-15-53-48.png)
 
 ## docker 安装
 

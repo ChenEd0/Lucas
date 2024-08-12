@@ -35,7 +35,7 @@ x.y.z
 
 ### 相关插件
 
-IDEA中可以安装插件 `Git Commit Template` `File->Setting->Plugs` 搜索插件`git commit template`并安装 （PS：**[点我下载插件](https://plugins.jetbrains.com/plugin/9861-git-commit-template/versions)**） ![](images/2022-08-11-16-42-25.png) 在提交代码时，使用插件来创建一个提交信息 ![](images/2022-08-12-10-52-22.png) ![](images/2022-08-11-16-38-06.png)
+IDEA中可以安装插件 `Git Commit Template` `File->Setting->Plugs` 搜索插件`git commit template`并安装 （PS：**[点我下载插件](https://plugins.jetbrains.com/plugin/9861-git-commit-template/versions)**） ![](../images/2022-08-11-16-42-25.png) 在提交代码时，使用插件来创建一个提交信息 ![](../images/2022-08-12-10-52-22.png) ![](../images/2022-08-11-16-38-06.png)
 
 ## ✅ 推送代码
 
@@ -57,9 +57,9 @@ IDEA中可以安装插件 `Git Commit Template` `File->Setting->Plugs` 搜索插
 
 **merge**的日志
 
-![](images/2022-08-11-19-53-21.png)  
+![](../images/2022-08-11-19-53-21.png)  
 **rebase**的日志
 
-![](images/2022-08-11-19-53-36.png)
+![](../images/2022-08-11-19-53-36.png)
 
 ### 对遗留不规范提交的处理

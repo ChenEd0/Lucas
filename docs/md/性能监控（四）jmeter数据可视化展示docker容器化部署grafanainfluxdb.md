@@ -1,5 +1,5 @@
-# jmeter数据可视化展示
-
+# Jmeter数据可视化展示
+docker容器化部署jmeter+grafana+influxdb
 https://hub.docker.com/ 可以从官网查询需要下载的镜像
 
 ## 1、influxdb镜像启动
@@ -42,7 +42,7 @@ docker run --name grafana -p 3000:3000 -d grafana/grafana
 
 ### 新建jmeter-influxDB
 
-点击首页的data source新建一个jmeter-influxdb的数据源 ![image-20220105220220038](images/image-20220105220220038.png) 选中influxdb，进行双击 ![image-20220105220417911](images/image-20220105220417911.png) 配置influxdb的地址，端口默认是8086，grafana和influxdb在同一个服务器，可以用localhost或者具体ip 在Custom HTTP Headers（自定义HTTP头）栏，点击+Add header，Header输入：Authorization， Value：Token 5Cd3xuxJ4tnoH\_weYtO88wBGI36EflLonCgko5i1waz8a6BmxLueTVlI83HJEDcOBoyRMbBs\_LZlI\_Tv1ZNZww Value的值为：Token +空格+InfluxDB 的Data-API Tokens中配置的外部访问jmeterToken的值 输入数据库、用户名和密码
+点击首页的data source新建一个jmeter-influxdb的数据源 ![image-20220105220220038](../images/image-20220105220220038.png) 选中influxdb，进行双击 ![image-20220105220417911](../images/image-20220105220417911.png) 配置influxdb的地址，端口默认是8086，grafana和influxdb在同一个服务器，可以用localhost或者具体ip 在Custom HTTP Headers（自定义HTTP头）栏，点击+Add header，Header输入：Authorization， Value：Token 5Cd3xuxJ4tnoH\_weYtO88wBGI36EflLonCgko5i1waz8a6BmxLueTVlI83HJEDcOBoyRMbBs\_LZlI\_Tv1ZNZww Value的值为：Token +空格+InfluxDB 的Data-API Tokens中配置的外部访问jmeterToken的值 输入数据库、用户名和密码
 
 点击Save & Test（保存和测试）按钮，提示Data source is working（数据源正在工作），表示配置已经好了，点击Back（返回）
 

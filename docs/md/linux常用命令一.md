@@ -2,6 +2,7 @@
 
 ## 系统信息
 
+```bash
 arch #显示机器的处理器架构(1)  
 uname -m #显示机器的处理器架构(2)  
 uname -r #显示正在使用的内核版本  
@@ -17,11 +18,12 @@ cat /proc/net/dev #显示网络适配器及统计
 cat /proc/mounts #显示已加载的文件系统  
 lspci -tv #罗列PCI设备  
 lsusb -tv #显示USB设备
-
+```
 ## 系统日期显示和设置
 
+```bash
 cal 2007 #显示2007年的日历表 date #查看日期和时间 date 041217002007.00 #设置日期和时间 - 月日时分年.秒  
-clock -w #将时间修改保存到 BIOS
+clock -w #将时间修改保存到 BIOS```
 
 ## 关机 (系统的关机、重启以及登出 )
 
@@ -74,3 +76,4 @@ file file1 #查看文件类型及其编码格式，第一个file是命令，第�
 iconv -l #列出已知的编码
 
 iconv -f fromEncoding -t toEncoding inputFile > outputFile #列出已知编码并保存到指定文件中
+```

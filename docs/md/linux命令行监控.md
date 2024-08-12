@@ -2,7 +2,7 @@
 
 ## top命令
 
-![](images/2022-08-08-13-58-45.png)
+![](../images/2022-08-08-13-58-45.png)
 
 ### 参数详解
 
@@ -50,11 +50,11 @@ CPU 是一种硬件资源，和任何其他硬件设备一样也需要驱动和�
 
 cat /boot/config-`uname -r` | grep '^CONFIG\_HZ=' CONFIG\_HZ=1000
 
-![](images/2022-08-08-14-09-24.png)
+![](../images/2022-08-08-14-09-24.png)
 
 通过cat /proc/interrupts可以查看中断的类型以及次数，用vmstat查看的 in（Interrupt）就是这个参数
 
-![](images/2022-08-08-14-09-58.png)
+![](../images/2022-08-08-14-09-58.png)
 
 2100是目前这台设备的在资源使用正常情况下的中断值
 
@@ -66,13 +66,13 @@ cat /boot/config-`uname -r` | grep '^CONFIG\_HZ=' CONFIG\_HZ=1000
 
 ping命令，可以用来测试两个网络的连通性，还可以测试网络的响应速度和延迟。
 
-![](images/2022-08-08-14-11-34.png)
+![](../images/2022-08-08-14-11-34.png)
 
 通过ping我们可以知道网络的响应情况，都是32字节的数据，百度返回是平均7ms；另外一个网络是241ms，这样的网络情况下做性能测试，数据一定是不准确的，网络延迟太厉害了。
 
 ## iostat命令
 
-![](images/2022-08-08-14-13-43.png)
+![](../images/2022-08-08-14-13-43.png)
 
 rrqm/s: 每秒进行 merge 的读操作数目。即 delta(rmerge)/s wrqm/s: 每秒进行 merge 的写操作数目。即 delta(wmerge)/s r/s: 每秒完成的读 I/O 设备次数。即 delta(rio)/s w/s: 每秒完成的写 I/O 设备次数。即 delta(wio)/s rsec/s: 每秒读扇区数。即 delta(rsect)/s wsec/s: 每秒写扇区数。即 delta(wsect)/s rkB/s: 每秒读K字节数。是 rsect/s 的一半，因为每扇区大小为512字节。(需要计算) wkB/s: 每秒写K字节数。是 wsect/s 的一半。(需要计算) avgrq-sz: 平均每次设备I/O操作的数据大小 (扇区)。delta(rsect+wsect)/delta(rio+wio) avgqu-sz:平均I/O队列长度。即 delta(aveq)/s/1000 (因为aveq的单位为毫秒)。 await: 平均每次设备I/O操作的等待时间 (毫秒)。即 delta(ruse+wuse)/delta(rio+wio) svctm: 平均每次设备I/O操作的服务时间 (毫秒)。即 delta(use)/delta(rio+wio) %util: 一秒中有百分之多少的时间用于 I/O 操作，或者说一秒中有多少时间 I/O 队列是非空的。即 delta(use)/s/1000 (因为use的单位为毫秒)
 
@@ -80,7 +80,7 @@ rrqm/s: 每秒进行 merge 的读操作数目。即 delta(rmerge)/s wrqm/s: 每�
 
 ## vmstat命令
 
-![](images/2022-08-08-14-14-38.png)
+![](../images/2022-08-08-14-14-38.png)
 
 r: 运行队列中进程数量 b: 等待IO的进程数量  
 swpd: 使用虚拟内存大小 free: 可用内存大小 buff: 用作缓冲的内存大小 cache: 用作缓存的内存大小 si: 每秒从交换区写到内存的大小 so: 每秒写入交换区的内存大小 bi: 每秒读取的块数 bo: 每秒写入的块数 in: 每秒中断数，包括时钟中断。 cs: 每秒上下文切换数。 us: 用户进程执行时间(user time) sy: 系统进程执行时间(system time) id: 空闲时间(包括IO等待时间) wa: 等待IO时间
