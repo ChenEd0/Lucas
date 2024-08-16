@@ -1,4 +1,4 @@
-1. **功能测试**
+* **功能测试**
    * [需求评审流程](md/需求评审流程.md)
    * [功能测试流程规范](md/功能测试流程规范.md)
    * [用例执行技巧（禅道）](md/测试用例执行技巧（禅道）.md)
@@ -18,7 +18,7 @@
        * **UI测试**
          * [正则表达式简介](md/正则表达式简介.md)
          * [如何优雅地定位元素](md/如何优雅地定位元素.md)
-2. **性能测试**
+* **性能测试**
    * [性能测试基本知识点](md/性能测试基本知识点.md)
    * [性能测试流程规范](md/性能测试流程规范.md)
    * [jmeter环境搭建](md/jmeter环境搭建.md)
@@ -31,24 +31,24 @@
      * [数据可视化一](md/性能监控（三）jmeter数据可视化展示jmetergrafanainfluxdb监控.md)
      * [数据可视化二](md/性能监控（四）jmeter数据可视化展示docker容器化部署grafanainfluxdb.md)
      * [数据可视化三](md/性能监控（五）jmeter数据可视化展示docker容器化部署grafanapromethe.md)
-3. **linux and docker**
+* **linux and docker**
    * [linux常用命令一](md/linux常用命令一.md)
    * [linux常用命令二](md/linux常用命令二.md)
    * [docker安装](md/docker安装.md)
    * [dockerfile文件详解](md/dockerfile文件详解.md)
    * [docker常用命令一](md/docker常用命令一.md)
    * [docker常用命令二](md/docker常用命令二.md)
-4. **wordpress实践**
+* **wordpress实践**
    * [wordpress加载慢的优化方法](md/wordpress加载慢的优化方法.md)
    * [wordpress增加图片放大功能](md/wordpress增加图片放大功能.md)
    * [wordpress美化教程_添加音乐播放器](md/wordpress美化教程_添加音乐播放器.md)
    * [wordpress美化教程_鼠标点击特效（显示富强、民主、和谐](md/wordpress美化教程_鼠标点击特效（显示富强、民主、和谐.md)
-5. **代码版本管理(git)**
+* **代码版本管理(git)**
    * [git Tips](md/gitTips.md)
    * [git规范.md](md/git规范.md)
    * [git教程.md](md/git教程.md)
    * [git常用命令.md](md/git常用命令.md)
-6. **杂**
+* **杂**
    * [win11修改host](md/win11修改host.md)
    * [常见问题及解决方案](md/常见问题及解决方案.md)
    * [一些设计工具](md/设计工具.md)
