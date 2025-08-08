@@ -31,9 +31,10 @@
      * [数据可视化一](md/性能监控（三）jmeter数据可视化展示jmetergrafanainfluxdb监控.md)
      * [数据可视化二](md/性能监控（四）jmeter数据可视化展示docker容器化部署grafanainfluxdb.md)
      * [数据可视化三](md/性能监控（五）jmeter数据可视化展示docker容器化部署grafanapromethe.md)
-* **linux and docker**
+* **linux**
    * [linux常用命令一](md/linux常用命令一.md)
    * [linux常用命令二](md/linux常用命令二.md)
+* **docker**
    * [docker安装](md/docker安装.md)
    * [dockerfile文件详解](md/dockerfile文件详解.md)
    * [docker常用命令一](md/docker常用命令一.md)
